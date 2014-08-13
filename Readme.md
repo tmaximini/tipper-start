@@ -1,0 +1,1 @@
+##### Landing page for wm-tipper.de while we wait for the next world cup.

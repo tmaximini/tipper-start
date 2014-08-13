@@ -1,0 +1,206 @@
+$icon-font-path: "../fonts/";
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.jumbotron {
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background: url(../images/bg.jpg) no-repeat center -350px fixed;
+  background-size: cover;
+  font-weight: 700;
+  font-size: 42px;
+  text-shadow: 2px 2px 0 rgba(10,10,10,.55);
+  color: #fff;
+}
+
+.bg-mobile {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  display: none;
+  img {
+    width: 100%;
+  }
+
+}
+
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel-indicators li {
+    border: 1px solid #bbb;
+}
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-bottom: 20px;
+    background: url(../images/gray_jean.png) repeat;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .carousel, .carousel .item {
+    height: 250px;
+  }
+  .bg-mobile {
+    display: block;
+  }
+  .jumbotron {
+    text-shadow: none;
+    background: none;
+    color: #333;
+    p {
+      font-size: 20px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .carousel, .carousel .item {
+    height: 180px;
+  }
+
+  .bg-mobile {
+    display: block;
+  }
+
+  .jumbotron {
+    text-shadow: none;
+    background: none;
+    color: #333;
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel, .carousel .item {
+    height: 150px;
+  }
+  .bg-mobile {
+    display: block;
+  }
+  .jumbotron {
+    text-shadow: none;
+    background: none;
+    color: #333;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
